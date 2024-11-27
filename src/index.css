@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-blue: #345ff6;
+  --primary-black: #253347;
+  --primary-gray: #5e6e85;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* TEXT STYLE */
+.heading-xl {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--primary-black);
+}
+.heading-lg {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--primary-black);
+}
+.heading-md {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--primary-black);
+}
+.heading-sm {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 110%;
+  color: var(--primary-black);
+}
+
+.body-text {
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--primary-gray);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading-xl {
+    font-size: 4rem;
+  }
+  .heading-lg {
+    font-size: 3rem;
+  }
+}

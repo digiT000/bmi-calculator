@@ -1,0 +1,28 @@
+.benefitItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.benefitItem img {
+  width: 64px;
+}
+.benefitContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 728px) {
+  .benefitItem {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefitItem {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

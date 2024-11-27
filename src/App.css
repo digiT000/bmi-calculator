@@ -1,0 +1,206 @@
+@import url("index.css");
+
+section {
+  padding: 0 1rem;
+}
+
+/* HEADER SECTION */
+.headerLogo {
+  text-align: center;
+  padding: 16px 0;
+}
+.headerLogo img {
+  width: 40px;
+}
+
+/* HERO SECTION */
+
+.heroSection {
+  position: relative;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+.heroGrid {
+  display: grid;
+  gap: 3rem;
+}
+.bg-gradient {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+  padding-bottom: 10rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-image: linear-gradient(to bottom right, #d6fcfe00, #d6e6fe);
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* FORM METRIC */
+.metricCalculator {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 16px 32px 32px rgba(143, 174, 207, 0.25);
+}
+.metricSelection {
+  display: flex;
+  gap: 1.25rem;
+}
+.inputRadioMetric {
+  display: flex;
+  gap: 0.5rem;
+}
+.labelRadio {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+
+/* SECTION WHAT IS BMI */
+.sectionWhatIsBMI {
+  margin-bottom: 5rem;
+}
+.sectionWhatIsBMI img {
+  width: 100%;
+}
+.innerWhatIsBmi {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.bmiContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* SECTION BENEFIT */
+.sectionBenefit {
+  padding: 5rem 1rem;
+  background-image: linear-gradient(to bottom right, #d6fcfe00, #d6e6fe);
+  margin-bottom: 5rem;
+}
+.innerBenefit {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* LIMITATION SECTION */
+.sectionLimitation {
+  margin-bottom: 5rem;
+}
+.innerLimitation {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.limitationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.gridLimitation {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 728px) {
+  .innerWhatIsBmi {
+    flex-direction: row;
+  }
+  .imageContainer {
+    width: 50%;
+  }
+  .bmiContent {
+    width: 50%;
+    justify-content: end;
+    margin-bottom: 24px;
+  }
+  .innerWhatIsBmi img {
+    position: relative;
+    width: 110%;
+    right: 50px;
+  }
+
+  .gridLimitation {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerLogo {
+    text-align: left;
+  }
+  .bg-gradient {
+    height: 100%;
+    width: 65%;
+  }
+  .heroSection {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+  }
+  .heroContent {
+    text-align: left;
+    padding-top: 60px;
+    justify-content: center;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .metricCalculator {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .innerBenefit {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .innerWhatIsBmi {
+    gap: 5rem;
+  }
+
+  .limitationContent {
+    text-align: left;
+  }
+  .innerLimitation {
+    flex-direction: row;
+  }
+
+  .sectionWhatIsBMI {
+    margin-bottom: 8rem;
+  }
+
+  .bmiContent {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .innerWhatIsBmi img {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  .sectionBenefit {
+    margin-bottom: 8rem;
+  }
+  .sectionLimitation {
+    margin-bottom: 8rem;
+  }
+}

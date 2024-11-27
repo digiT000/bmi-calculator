@@ -1,0 +1,17 @@
+.limitationItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  box-shadow: 1px 32px 56px rgba(143, 174, 207, 0.25);
+}
+.limitationHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.limitationHeader img {
+  width: 32px;
+}
